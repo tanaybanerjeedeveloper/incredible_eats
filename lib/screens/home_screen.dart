@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomeScreen extends StatefulWidget {
   //HomeScreen({Key? key}) : super(key: key);
@@ -23,7 +24,37 @@ class _HomeScreenState extends State<HomeScreen> {
         leading: const Icon(
           Icons.fmd_good,
           color: Colors.white,
-          size: 15.65,
+          size: 20,
+        ),
+        title: Text(
+          '237, Sane Guruji Marg, Jacob Circle',
+          style: TextStyle(
+            fontWeight: FontWeight.w600,
+            fontSize: 12.sp,
+            color: Colors.white,
+          ),
+        ),
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(56),
+          child: Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              // decoration: const BoxDecoration(
+              //     borderRadius: BorderRadius.all(Radius.circular(30))),
+              child: TextField(
+                decoration: InputDecoration(
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(4),
+                      borderSide: const BorderSide(
+                        width: 0,
+                        style: BorderStyle.none,
+                      )),
+                  filled: true,
+                  fillColor: Colors.white,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );

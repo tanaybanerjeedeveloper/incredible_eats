@@ -68,18 +68,21 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                     Container(
                       height: 50.h,
                       width: 50.h,
-                      decoration: const BoxDecoration(
-                          borderRadius: BorderRadius.all(Radius.circular(3))),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(20)),
                       child: TextField(
                         onChanged: (value) {
                           if (value.length == 1) {
                             FocusScope.of(context).nextFocus();
                           }
                         },
-                        decoration: const InputDecoration(
-                            border: InputBorder.none,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(4)),
+                            enabledBorder: InputBorder.none,
+                            focusedBorder: InputBorder.none,
                             filled: true,
-                            fillColor: Color(0xffE5E5E5)),
+                            fillColor: const Color(0xffE5E5E5)),
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
                         inputFormatters: [
@@ -99,10 +102,13 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                             FocusScope.of(context).nextFocus();
                           }
                         },
-                        decoration: const InputDecoration(
-                            border: InputBorder.none,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(4)),
+                            enabledBorder: InputBorder.none,
+                            focusedBorder: InputBorder.none,
                             filled: true,
-                            fillColor: Color(0xffE5E5E5)),
+                            fillColor: const Color(0xffE5E5E5)),
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
                         inputFormatters: [
@@ -122,10 +128,13 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                             FocusScope.of(context).nextFocus();
                           }
                         },
-                        decoration: const InputDecoration(
-                            border: InputBorder.none,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(4)),
+                            enabledBorder: InputBorder.none,
+                            focusedBorder: InputBorder.none,
                             filled: true,
-                            fillColor: Color(0xffE5E5E5)),
+                            fillColor: const Color(0xffE5E5E5)),
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
                         inputFormatters: [
@@ -145,10 +154,13 @@ class _OTPVerificationScreenState extends State<OTPVerificationScreen> {
                             FocusScope.of(context).nextFocus();
                           }
                         },
-                        decoration: const InputDecoration(
-                            border: InputBorder.none,
+                        decoration: InputDecoration(
+                            border: OutlineInputBorder(
+                                borderRadius: BorderRadius.circular(4)),
+                            enabledBorder: InputBorder.none,
+                            focusedBorder: InputBorder.none,
                             filled: true,
-                            fillColor: Color(0xffE5E5E5)),
+                            fillColor: const Color(0xffE5E5E5)),
                         keyboardType: TextInputType.number,
                         textAlign: TextAlign.center,
                         inputFormatters: [
