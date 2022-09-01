@@ -6,11 +6,15 @@ class IntroScreen extends StatelessWidget {
   final String backgroundImg;
   final String title;
   final String subTitle;
+  final VoidCallback onPressedSkip;
+  final VoidCallback onPressedNext;
 
   const IntroScreen(
       {required this.backgroundImg,
       required this.title,
-      required this.subTitle});
+      required this.subTitle,
+      required this.onPressedSkip,
+      required this.onPressedNext});
 
   @override
   Widget build(BuildContext context) {
@@ -71,6 +75,7 @@ class IntroScreen extends StatelessWidget {
                     backgroundColor: Theme.of(context).primaryColor,
                     padding:
                         EdgeInsets.symmetric(vertical: 10.h, horizontal: 50.w)),
+                onPressed: onPressedNext,
                 child: Text(
                   'Next',
                   style: TextStyle(
@@ -78,13 +83,13 @@ class IntroScreen extends StatelessWidget {
                       fontSize: 16.sp,
                       color: Colors.white),
                 ),
-                onPressed: () {},
               ),
             ),
             SizedBox(
               height: 5.h,
             ),
             TextButton(
+              onPressed: onPressedSkip,
               child: Text(
                 'Skip',
                 style: TextStyle(
@@ -93,7 +98,6 @@ class IntroScreen extends StatelessWidget {
                   color: const Color(0xffA5A5A5),
                 ),
               ),
-              onPressed: () {},
             )
           ],
         ),

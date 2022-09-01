@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import './screens/onboarding_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import './utilities/routes.dart';
 
 void main() {
+  // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+  //     statusBarColor: Colors.white, statusBarIconBrightness: Brightness.dark));
   runApp(const MyApp());
 }
 
@@ -23,16 +26,7 @@ class MyApp extends StatelessWidget {
               ),
               debugShowCheckedModeBanner: false,
               home: OnboardingScreen(),
+              routes: routes,
             ));
-
-    // MaterialApp(
-    //   title: 'Flutter Demo',
-    //   theme: ThemeData(
-    //     primaryColor: const Color(0xffE20A13),
-    //     fontFamily: 'Poppins',
-    //     scaffoldBackgroundColor: const Color(0xffFFFFFF),
-    //   ),
-    //   home: IntroScreen(),
-    // );
   }
 }
