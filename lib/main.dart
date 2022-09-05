@@ -1,5 +1,5 @@
+import 'package:eat_incredible_app/screens/location_screen.dart';
 import 'package:flutter/material.dart';
-import './screens/onboarding_screen.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import './utilities/routes.dart';
 
@@ -25,7 +25,8 @@ class MyApp extends StatelessWidget {
                 scaffoldBackgroundColor: const Color(0xffFFFFFF),
               ),
               debugShowCheckedModeBanner: false,
-              home: OnboardingScreen(),
+              // home: OnboardingScreen(),
+              home: LocationScreen(),
               routes: routes,
             ));
   }
